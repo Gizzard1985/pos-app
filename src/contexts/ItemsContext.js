@@ -15,7 +15,7 @@ const ItemsContextProvider = ({ children }) => {
 
     // action fetch data
     const getAllItems = async () => {
-        const { data } = await axios.get("https://my-pointofsales-api.herokuapp.com/api/items")
+        const { data } = await axios.get("/api/items")
         dispatch({ type: "GET_DATA", payload: data })
     }
     return (

@@ -7,7 +7,7 @@ const ItemsList = () => {
 
     useEffect(() => {
         getAllItems();
-    }, []);
+    });
 
     return (
         <div>
